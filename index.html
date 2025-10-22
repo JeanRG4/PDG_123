@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual de Informática y Seguridad Digital</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Manual de Informática y Seguridad Digital</h1>
+    <nav>
+      <a href="#" data-section="inicio">Inicio</a>
+      <a href="#" data-section="manual">Manual</a>
+      <a href="#" data-section="evaluacion">Evaluación</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- 🔹 Sección de INICIO -->
+    <section id="inicio" class="visible">
+      <h2>Bienvenido</h2>
+      <p>
+        Este <b>Manual de Informática y Seguridad Digital</b> está diseñado para fortalecer tus conocimientos sobre el uso responsable, seguro y eficiente de las tecnologías.
+        Explora los capítulos, realiza las evaluaciones y pon a prueba tu aprendizaje.
+      </p>
+    </section>
+
+    <!-- 🔹 Sección del MANUAL -->
+    <section id="manual" class="oculto">
+      <h2>Lectura del Manual</h2>
+
+      <!-- Navegación entre capítulos -->
+      <div class="chapter-nav">
+        <button class="chapter-btn" data-capitulo="1">Capítulo 1</button>
+        <button class="chapter-btn" data-capitulo="2">Capítulo 2</button>
+        <button class="chapter-btn" data-capitulo="3">Capítulo 3</button>
+        <button class="chapter-btn" data-capitulo="4">Capítulo 4</button>
+        <button class="chapter-btn" data-capitulo="5">Capítulo 5</button>
+        <button class="chapter-btn" data-capitulo="6">Capítulo 6</button>
+        <button class="chapter-btn" data-capitulo="7">Capítulo 7</button>
+        <button class="chapter-btn" data-capitulo="8">Capítulo 8</button>
+      </div>
+
+      <!-- Contenido del manual -->
+      <div id="capitulo-contenido">
+        <h3 id="titulo-capitulo">Selecciona un capítulo</h3>
+        <div class="iframe-wrapper">
+          <iframe id="pdf-frame" src="recursos/pdf/ManualV1.pdf#page=5" title="Manual PDF"></iframe>
+        </div>
+
+       <!-- Contenedor del quiz dinámico -->
+<section id="quiz-section">
+  <h2>Evaluación del Capítulo</h2>
+  <div id="quiz-container">
+    <p>Selecciona un capítulo para comenzar la evaluación.</p>
+  </div>
+</section>
+
+    </section>
+
+    <!-- 🔹 Sección de EVALUACIÓN GLOBAL -->
+    <section id="evaluacion" class="oculto">
+      <h2>Evaluación Final</h2>
+      <p>Cuando completes todos los capítulos, verás tu progreso total aquí.</p>
+
+      <div class="progress">
+        <div class="progress-fill" id="global-progress">0%</div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 Unidad Educativa Fiscal Dr. Alfredo Baquerizo Moreno
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
