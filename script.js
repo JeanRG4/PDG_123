@@ -624,7 +624,7 @@ botones.forEach(btn => {
     // Redirigir PDF
     const pagina = paginas[cap];
     if (pagina) {
-      pdfFrame.src = `recursos/pdf/ManualV1.pdf#page=${pagina}`;
+      pdfFrame.src = `ManualV1.pdf#page=${pagina}`;
     } else {
       pdfFrame.src = "";
       console.warn(`No hay página asignada para el capítulo ${cap}`);
